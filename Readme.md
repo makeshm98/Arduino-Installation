@@ -104,9 +104,7 @@ After installing Arduino on your system, follow these steps to set up the serial
    sudo usermod -a -G dialout $USER
 
    
-## Grant Permissions to the Serial Port
-
-Run the following command in the terminal to grant read and write permissions to all users for the serial port (replace `/dev/ttyACM0` with the appropriate port identifier):
+2. **Grant Permissions to the Serial Port**: Run the following command in the terminal to grant read and write permissions to all users for the serial port (replace `/dev/ttyACM0` with the appropriate port identifier):
 
    ```bash
    sudo chmod a+rw /dev/ttyACM0
