@@ -89,3 +89,27 @@ Follow these steps to create a desktop shortcut for the Arduino IDE:
    Name=Arduino 2.3.2
    Icon=/home/makesh/Arduino/arduino-ide_2.3.2_Linux_64bit/arduino-ide-icon-2048x2025-x4ims8sb.png
 
+
+# Arduino Setup Guide
+
+Welcome to the Arduino Setup Guide! This guide will walk you through the process of setting up the serial port after installing Arduino on your system.
+
+## Setting Up Serial Port After Installing Arduino
+
+After installing Arduino on your system, follow these steps to set up the serial port:
+
+1. **Add User to the Dialout Group**: Run the following command in the terminal to add the current user to the "dialout" group. This is necessary to access serial ports without needing root permissions:
+   
+   ```bash
+   sudo usermod -a -G dialout $USER
+
+   
+## Grant Permissions to the Serial Port
+
+Run the following command in the terminal to grant read and write permissions to all users for the serial port (replace `/dev/ttyACM0` with the appropriate port identifier):
+
+```bash
+sudo chmod a+rw /dev/ttyACM0
+
+
+This command ensures that all users have the necessary permissions to communicate with the device connected to the specified serial port.
