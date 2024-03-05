@@ -108,8 +108,8 @@ After installing Arduino on your system, follow these steps to set up the serial
 
 Run the following command in the terminal to grant read and write permissions to all users for the serial port (replace `/dev/ttyACM0` with the appropriate port identifier):
 
-```bash
-sudo chmod a+rw /dev/ttyACM0
+   ```bash
+   sudo chmod a+rw /dev/ttyACM0
 
 
 This command ensures that all users have the necessary permissions to communicate with the device connected to the specified serial port.
