@@ -71,14 +71,19 @@ Before following these instructions, ensure that you have the following:
 Follow these steps to create a desktop shortcut for the Arduino IDE:
 
 1. **Create a Desktop Entry File:**
-   - Open a terminal.
+   - Open a terminal in,
+
+     ```
+     /usr/share/applications
+     ```
+
    - Run the command:
      ```
      sudo nano Arduino.desktop
      ```
    - This will open the Nano text editor and create a new file named `Arduino.desktop`.
 
-2. **Paste the Following Contents into the File:**
+1. **Paste the Following Contents into the File:**
    ```desktop
    [Desktop Entry]
    Encoding=UTF-8
